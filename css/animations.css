@@ -1,6 +1,6 @@
 @keyframes swipe-appear {
 	0% { width: 0; padding: 0; }
-	100% { width: 100%; padding: 0 10px; }
+	100% { width: 100%; padding: 0 0.1em; }
 }
 
 @keyframes slide-up {
