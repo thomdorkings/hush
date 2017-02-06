@@ -200,11 +200,11 @@ main {
 	z-index: -1;
 	visibility: hidden;
 	opacity: 0;
-	transition: all 2s ease;
+	transition: all 0.6s ease;
 }
 
 #result:target {
-	z-index: 1;
+	z-index: 200;
 	visibility: visible;
 	opacity: 1;
 }
@@ -216,20 +216,8 @@ main {
 	color: #fff;
 }
 
-h3#style {
-	font-size: 2.5em;
-	line-height: 1em;
-	margin: 0;
-}
-
-@media only screen and (min-width: 601px) {
-  h3#style {
-    font-size: 4em;
-  }
-}
-
-@media only screen and (min-width: 993px) {
-  h3#style {
-    font-size: 6em;
-  }
+#result:target .container p {
+	opacity: 0;
+	transform: translateY(30px);
+	animation: slide-up 2s ease forwards 0.2s;
 }

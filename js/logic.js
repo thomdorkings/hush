@@ -12,8 +12,11 @@ $('.answers .button').on('click', function() {
 	if ($(this).attr('data-style') == 'urban') { styles.urban++ };
 	if ($(this).attr('data-style') == 'colourriot') { styles.colourriot++ };
 	if ($(this).attr('data-style') == 'minimalist') { styles.minimalist++ };
-	$('#style').text(whichStyle(styles));
 })
+
+$('#question5 .answers .button').on('click', function() {
+	setTimeout(function() {window.location.href = "results/"+whichStyle(styles)+".html"}, 2500);
+});
 
 
 function whichStyle(styles) {
