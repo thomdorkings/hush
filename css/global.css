@@ -272,3 +272,44 @@ main {
 	margin: 0 15px;
 	transform: scale(1.1);
 }
+
+#follow {
+	position: fixed;
+	bottom: 20px;
+	left: 3%;
+	z-index: 200;
+}
+
+@media only screen and (min-width: 601px) {
+	#follow {
+		left: 5%;
+		bottom: 50px;
+	}
+}
+
+#follow .toggle {
+	display: block;
+	transform: rotate(90deg);
+}
+
+#follow .links {
+	padding-top: 30px;
+	overflow: hidden;
+	max-height: 0;
+	transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+#follow:hover .links {
+	max-height: 200px;
+}
+
+#follow .links>a {
+	display: block;
+	padding: 8px;
+	transform: scale(0.8);
+	transition: all 0.3s ease;
+}
+
+#follow .links>a:hover {
+	transform: scale(1);
+}
