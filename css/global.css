@@ -15,7 +15,7 @@ header>.logo {
 	top: 30px;
 	left: 50%;
 	transform: translateX(-50%);
-	max-width: 20%;
+	max-width: 25%;
 }
 
 header>.logo>img {
@@ -28,8 +28,7 @@ header>.share {
 	top: 45px;
 	color: #191e22;
 	text-decoration: none;
-	max-width: 30%;
-	font-size: 0.75em;
+	white-space: nowrap;
 }
 
 header>.shop:after,
@@ -52,20 +51,27 @@ header>.share:after {
   }
   header>.shop,
   header>.share {
-    font-size: 1em;
     top: 70px;
   }
   header>.logo {
 	  top: 50px;
   }
+  header>.shop>span:before {
+	  content:'Hit The ';
+  }
+  header>.share>span:after {
+	  content:' With A Friend';
+  }
 }
 
 header>.shop {
 	left: 5%;
+	text-align: right;
 }
 
 header>.share {
 	right: 5%;
+	text-align: left;
 }
 
 
@@ -278,6 +284,7 @@ main {
 	bottom: 20px;
 	left: 3%;
 	z-index: 100;
+	cursor: pointer;
 }
 
 @media only screen and (min-width: 601px) {
@@ -312,4 +319,27 @@ main {
 
 #follow .links>a:hover {
 	transform: scale(1);
+}
+
+
+/* Style Pages */
+
+.cover {
+	position: fixed;
+	background: #F0DED9;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: 200;
+	transition: all 0.6s ease;
+	animation: urban 3s cubic-bezier(0.86, 0, 0.07, 1) forwards 1s;
+}
+
+.cover .container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-55%);
+	color: #fff;
 }

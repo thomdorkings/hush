@@ -15,7 +15,7 @@ $('.answers .button').on('click', function() {
 })
 
 $('#question5 .answers .button').on('click', function() {
-	setTimeout(function() {window.location.href = "results/"+whichStyle(styles)+".html"}, 2500);
+	setTimeout(function() {window.location.href = whichStyle(styles)+".html"}, 2500);
 });
 
 
