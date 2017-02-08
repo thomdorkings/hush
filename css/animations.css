@@ -8,8 +8,19 @@
 	100% { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes urban {
+@keyframes slide-up-out {
+	0% { opacity: 0; transform: translateY(30px); }
+	60% { opacity: 1; }
+	90% { opacity: 1; transform: translateY(0); }
+	100% { opacity: 0; transform: scale(2); }
+}
+
+@keyframes hide {
+	0% {}
+	100% { opacity: 0; visibility: hidden; }
+}
+
+@keyframes move-to-back {
 	0% { }
-	70% { background: #222; transform: scale(1); opacity: 1; filter: none; }
-	100% { transform: scale(1.5); opacity: 0; filter: blur(30px); }
+	100% { z-index: 0; }
 }

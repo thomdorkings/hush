@@ -17,3 +17,8 @@ h1, h2, h3 {
 h4, h5 {
 	font-weight: 500;
 }
+
+p.small {
+	font-size: 0.8em;
+	line-height: 1.4em;
+}

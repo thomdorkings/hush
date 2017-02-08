@@ -15,7 +15,11 @@ $('.answers .button').on('click', function() {
 })
 
 $('#question5 .answers .button').on('click', function() {
-	setTimeout(function() {window.location.href = whichStyle(styles)+".html"}, 2500);
+	if(whichStyle(styles) == 'modernfeminine') { $('#result').css({background: '#ebd8de'}); }
+	if(whichStyle(styles) == 'urban') { $('#result').css({background: '#b0b6a7'}); }
+	if(whichStyle(styles) == 'colourriot') { $('#result').css({background: '#b7d9dc'}); }
+	if(whichStyle(styles) == 'minimalist') { $('#result').css({background: '#e0dddc'}); }
+	setTimeout(function() {window.location.href = whichStyle(styles)+".html"}, 4200);
 });
 
 
