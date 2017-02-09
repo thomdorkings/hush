@@ -24,3 +24,13 @@
 	0% { }
 	100% { z-index: 0; }
 }
+
+@keyframes scale-down {
+	0% {}
+	100% { transform: scale(1); }
+}
+
+@keyframes scale-up {
+	0% {}
+	100% { transform: scale(1.1); }
+}
