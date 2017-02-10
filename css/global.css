@@ -5,6 +5,10 @@ a {
 	text-decoration: none;
 }
 
+.reveal {
+	visibility: hidden;
+}
+
 .underline {
 	position: relative;
 }
@@ -556,6 +560,7 @@ main {
 	right: 0;
 	bottom: 0;
 	left: 0;
+	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -613,4 +618,78 @@ main {
 .grid p {
 	max-width: 320px;
 	color: #888;
+}
+
+
+#shareyourstyle h4 {
+	font-size: 1.6em;
+	display: inline-block;
+	position: relative;
+	margin:0 0 4em 0;
+}
+
+.carousel1 {
+	text-align: left;
+	position: relative;
+}
+
+.carousel1 .slick-slide img {
+	width: 100%;
+}
+
+.carousel1 h5 {
+	font-size: 1em;
+	display: inline-block;
+	margin: 1.5em 0 0 0;
+}
+
+.carousel1 p {
+	max-width: 320px;
+}
+
+.carousel1 .slick-slide {
+	padding: 0 1em 4em 1em;	
+	outline: none;
+	height: auto;
+}
+
+.arrow {
+	height: 30px;
+	width: 25px;
+	position: absolute;
+	top: 38%;
+	cursor: pointer;
+	z-index: 900;
+}
+
+.arrow-left {
+	transform: rotate(-90deg);
+	left: 0px;
+}
+
+.arrow-right {
+	transform: rotate(90deg);
+	right: 0px;
+}
+
+@media only screen and (min-width: 601px) {
+  .arrow-left {
+    left: -20px;
+  }
+  .arrow-right {
+	right: -20px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .arrow-left {
+    left: -60px;
+  }
+  .arrow-right {
+	right: -60px;
+  }
+}
+
+.arrow-down {
+	transform: rotate(180deg);
 }

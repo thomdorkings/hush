@@ -17,15 +17,17 @@
 <link href="css/fonts.css" rel="stylesheet">
 <link href="css/animations.css" rel="stylesheet">
 <link href="css/global.css" rel="stylesheet">
+<link href="css/slick.css" rel="stylesheet"/>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/scrollreveal.min.js"></script>
 
 <script src="js/logic.js"></script>
 <script src="js/global.js"></script>
 
 <script>
-  window.sr = ScrollReveal({ duration: 1000, scale: 1, distance: '30px', easing: 'ease', viewFactor: 0.2 });
+  window.sr = ScrollReveal({ duration: 1000, scale: 1, distance: '100px', easing: 'ease', viewFactor: 0.3 });
 </script>
 
 <style>.underline:after { background: #b7d9dc; } .cover, #share { background: #b7d9dc; }</style>
@@ -45,7 +47,6 @@
 		<section class="banner">
 			<div class="image-left" style="background-image: url('img/colourriot/left.jpg');"></div>
 			<div class="image-right" style="background-image: url('img/colourriot/right.jpg');"></div>
-			<div class="cover"></div>
 			<div class="container">
 				<div class="wrap">
 					<h1>Colour Riot</h1>
@@ -114,6 +115,29 @@
 		
 		<section id="shareyourstyle">
 			<div class="container">
+				<div class="row offset-2l 8l">
+					<h4 class="underline">You Share Your Style With...</h4>
+					<div class="carousel1">
+						<div>
+							<img src="img/colourriot/left.jpg">
+							<h5 class="underline">Girls Name</h5>
+							<p class="small">Actress</p>
+							<p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+						<div>
+							<img src="img/colourriot/left.jpg">
+							<h5 class="underline">Girls Name</h5>
+							<p class="small">Actress</p>
+							<p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+						<div>
+							<img src="img/colourriot/left.jpg">
+							<h5 class="underline">Girls Name</h5>
+							<p class="small">Actress</p>
+							<p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		
@@ -157,7 +181,7 @@
 
 <!-- make reveal calls last -->
 <script>
-  sr.reveal('.reveal', 200);
+  sr.reveal('.reveal');
 </script>
 
 

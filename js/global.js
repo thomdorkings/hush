@@ -94,6 +94,15 @@ $(function() {
 		autoplaySpeed: 3000
 	});
 	
+	$('.carousel1').slick({
+		arrows: true,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		nextArrow: '<img src="img/arrow.svg" class="arrow arrow-right">',
+		prevArrow: '<img src="img/arrow.svg" class="arrow arrow-left">',
+	});
+	
 	$('.share').on('click', function() {
 		$('#share').addClass('open');
 		return false;
