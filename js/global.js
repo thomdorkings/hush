@@ -101,6 +101,7 @@ $(function() {
 		slidesToScroll: 1,
 		nextArrow: '<img src="img/arrow.svg" class="arrow arrow-right">',
 		prevArrow: '<img src="img/arrow.svg" class="arrow arrow-left">',
+		adaptiveHeight: true
 	});
 	
 	$('.share').on('click', function() {
