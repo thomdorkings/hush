@@ -113,6 +113,61 @@ $(function() {
 		$('#share').removeClass('open');
 		return false;
 	});
+	
+	
+	//Scroll arrows
+	
+	var sections = $('.section');
+	console.log(sections);
+	var i =0;
+	
+	function next(){
+	    if(i == 0){
+	        $('.up').css({opacity:1})
+	    }
+	    if(i < sections.length -1){
+	        i++;
+	        if(i == sections.length -1){
+	             $('.down').css({opacity:0.2})   
+	        }
+	         $('html, body').animate({
+	            scrollTop: sections[i].offsetTop-120
+	        }, 1000);
+	    }
+	}
+	
+	function prev(){
+	    if(i == sections.length -1){
+	        $('.down').css({opacity:1})
+	    }
+	    if(i > 0){
+	        i--;
+	        if(i == 0){
+	        	$('.up').css({opacity:0.2})
+	        }
+	         $('html, body').animate({
+	            scrollTop: sections[i].offsetTop-120
+	        }, 1000);
+	    }    
+	}
+	$('html').keydown(function(e){
+	    if(e.which == '38'){
+	        prev();    
+	    }
+	   if(e.which == '40'){
+	        next();    
+	    }
+	});
+	$('.down').click(function(e){
+	   e.preventDefault();
+	   next();
+	});
+	
+	$('.up').click(function(e){
+	   e.preventDefault();
+	   prev();
+	}); 
+	
 
 });
 
