@@ -704,7 +704,7 @@ main {
 
 .scroller {
 	position: fixed;
-	bottom: 20px;
+	bottom: 35px;
 	right: 3%;
 	z-index: 100;
 }
@@ -712,7 +712,7 @@ main {
 @media only screen and (min-width: 601px) {
 	.scroller {
 		right: 5%;
-		bottom: 50px;
+		bottom: 60px;
 	}
 }
 
