@@ -594,7 +594,7 @@ main {
 }
 
 .grid {
-	padding: 40px 0;
+	padding: 40px 0 0 0;
 	text-align: left;
 }
 
@@ -625,7 +625,7 @@ main {
 	font-size: 1.6em;
 	display: inline-block;
 	position: relative;
-	margin:0 0 4em 0;
+	margin:2em 0 2em 0;
 }
 
 .carousel1 {
