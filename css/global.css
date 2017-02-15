@@ -701,7 +701,6 @@ main {
 
 #justforyou {
 	text-align: center;
-	padding-bottom: 60px;
 }
 
 #justforyou h2 {
@@ -747,6 +746,12 @@ main {
 #justforyou .col:hover .button {
 	transform: translateY(0);
 	opacity: 1;
+}
+
+.subscribe .container {
+	padding: 60px 0;
+	border-top: 2px dotted #ccc;
+	border-bottom: 2px dotted #ccc;
 }
 
 

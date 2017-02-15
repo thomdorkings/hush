@@ -51,7 +51,7 @@ $(function() {
 	    return chosenStyle;
 	}
 
-    $('form').submit(function (e) {
+    $('.question form').submit(function (e) {
         e.preventDefault();
         $.getJSON(
         this.action + "?callback=?",
@@ -66,6 +66,21 @@ $(function() {
 				if(whichStyle(styles) == 'colourriot') { $('#result').css({background: '#b7d9dc'}); }
 				if(whichStyle(styles) == 'minimalist') { $('#result').css({background: '#e0dddc'}); }
 				setTimeout(function() {window.location.href = whichStyle(styles)+".html"}, 4200);
+            }
+        });
+    });
+    
+    $('.subscribe form').submit(function (e) {
+        e.preventDefault();
+        $.getJSON(
+        this.action + "?callback=?",
+        $(this).serialize(),
+        function (data) {
+            if (data.Status === 400) {
+                alert('error');
+            } else { // 200
+	            $('.subscribe input').prop('disabled', true);
+	            $('.subscribe button').text('Thank You!').prop('disabled', true).removeClass('underline');
             }
         });
     });
