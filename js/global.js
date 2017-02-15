@@ -119,6 +119,16 @@ $(function() {
 		adaptiveHeight: true
 	});
 	
+	$('.carousel2').slick({
+		arrows: true,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		nextArrow: '<img src="img/arrow.svg" class="arrow arrow-right">',
+		prevArrow: '<img src="img/arrow.svg" class="arrow arrow-left">',
+		adaptiveHeight: true
+	});
+	
 	$('.share').on('click', function() {
 		$('#share').addClass('open');
 		return false;
