@@ -727,7 +727,7 @@ main {
 
 #justforyou .button {
 	padding: 10px;
-	border: 1px solid #F0DFD7;
+	border: 1px solid #eee;
 	font-size: 0.8em;
 	color: #888;
 	text-decoration: none;
@@ -739,7 +739,7 @@ main {
 }
 
 #justforyou .button:hover {
-	background: #F0DFD7;
+	background: #eee;
 	color: #000;
 }
 
@@ -754,6 +754,19 @@ main {
 	border-bottom: 2px dotted #ccc;
 }
 
+#takeagain {
+	padding-bottom: 100px;
+}
+
+#takeagain h4 {
+	display: inline-block;
+	font-size: 2em;
+}
+
+#takeagain .container {
+	border-bottom: 2px dotted #ccc;
+	padding-bottom: 40px;
+}
 
 
 /*fixed anchor scroll buttons*/
