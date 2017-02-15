@@ -625,7 +625,7 @@ main {
 	font-size: 1.6em;
 	display: inline-block;
 	position: relative;
-	margin:2em 0 2em 0;
+	margin: 2em 0 2em 0;
 }
 
 .carousel1 {
@@ -698,6 +698,57 @@ main {
 .arrow-down {
 	transform: rotate(180deg);
 }
+
+#justforyou {
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+#justforyou h2 {
+	margin: 0 0 -30px 0;
+}
+
+#justforyou h2>img {
+	max-width: 500px;
+}
+
+#justforyou .col {
+	padding-top: 0;
+}
+
+#justforyou h3 {
+	font-size: 1.3em;
+	margin: 0.6em 0 0 0;
+}
+
+#justforyou .price {
+	font-size: 0.8em;
+	margin: 0.8em 0;
+}
+
+#justforyou .button {
+	padding: 10px;
+	border: 1px solid #F0DFD7;
+	font-size: 0.8em;
+	color: #888;
+	text-decoration: none;
+	display: block;
+	margin: 0 15px;
+	transition: all 0.3s ease;
+	transform: translateY(10px);
+	opacity: 0;
+}
+
+#justforyou .button:hover {
+	background: #F0DFD7;
+	color: #000;
+}
+
+#justforyou .col:hover .button {
+	transform: translateY(0);
+	opacity: 1;
+}
+
 
 
 /*fixed anchor scroll buttons*/
