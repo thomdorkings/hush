@@ -895,19 +895,20 @@ main {
 	color: #888;
 }
 
-#justforyou .hover {
+#justforyou .hover,
+#justforyou-mobile .hover {
 	visibility: hidden;
 	height: 0;
 }
 
 #justforyou .col:hover img,
-#justforyou-mobile .slide-slide:hover img {
+#justforyou-mobile .slick-slide:hover img {
 	visibility: hidden;
 	height: 0;
 }
 
 #justforyou .col:hover .hover,
-#justforyou-mobile .slide-slide:hover .hover {
+#justforyou-mobile .slick-slide:hover .hover {
 	visibility: visible;
 	height: auto;
 }
