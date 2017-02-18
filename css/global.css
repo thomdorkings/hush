@@ -5,6 +5,10 @@ a {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+}
+
 .underline {
 	position: relative;
 	z-index: 1;
@@ -519,6 +523,7 @@ main {
 	background: #FCFBF6;
 	transform: translateY(100%);
 	transition: all 0.3s ease;
+	z-index: 2;
 }
 
 .stickyshare.visible {
@@ -655,6 +660,7 @@ main {
 	transform: translate3d(-50%, -50%, 0);
 	z-index: 0;
 	opacity: 0.3;
+	max-width: 500px;
 }
 
 #yourstyle h4 {
@@ -667,6 +673,7 @@ main {
 
 #yourstyle p {
 	margin: 0 auto;
+	max-width: 320px;
 }
 
 #yourstyle p.serif {
@@ -695,27 +702,17 @@ main {
 	margin: auto;
 }
 
-.grid {
-	padding: 40px 0 0 0;
-	text-align: left;
+#lookbook {
+	padding: 60px 0;
 }
 
-.grid .col {
-	margin-bottom: 5%;
-}
-
-.grid img {
-	width: 100%;
-}
-
-.grid h3 {
-	font-size: 1.8em;
-	margin: 20px 0 0 0;
-}
-
-.grid p {
-	max-width: 320px;
+#lookbook p {
+	margin-top: 1em;
 	color: #888;
+}
+
+#lookbook .slick-slide {
+	text-align: left;
 }
 
 #shareyourstyle h4 {
@@ -742,7 +739,6 @@ main {
 
 .carousel p {
 	max-width: 400px;
-	margin-top: 0;
 }
 
 .carousel p.book {
@@ -802,8 +798,34 @@ main {
 }
 
 #justforyou {
+	display: none;
+}
+
+@media only screen and (min-width: 601px) {
+	#justforyou {
+		display: block;
+	}
+	#justforyou-mobile {
+		display: none;
+	}
+}
+
+#justforyou,
+#justforyou-mobile {
 	text-align: center;
 	padding-top: 60px;
+}
+
+#justforyou-mobile {
+	padding-bottom: 60px;
+}
+
+#justforyou-mobile .slick-slide {
+	text-align: center;
+}
+
+#justforyou .col {
+	margin-bottom: 5%;
 }
 
 #justforyou h2 {
@@ -814,17 +836,26 @@ main {
 	max-width: 450px;
 }
 
-#justforyou h3 {
+#justforyou h3,
+#justforyou-mobile h3 {
 	font-size: 1.3em;
 	margin: 1.2em 0 0 0;
 }
 
-#justforyou .price {
-	font-size: 0.8em;
-	margin: 0.8em 0;
+#justforyou p {
+	max-width: 320px;
+	color: #888;
 }
 
-#justforyou .button {
+#justforyou .price,
+#justforyou-mobile .price {
+	font-size: 0.8em;
+	margin: 0.8em auto;
+	color: #888;
+}
+
+#justforyou .button,
+#justforyou-mobile .button {
 	padding: 10px;
 	border: 1px solid #eee;
 	font-size: 0.8em;
@@ -837,11 +868,13 @@ main {
 	opacity: 0;
 }
 
-#justforyou .button:hover {
+#justforyou .button:hover,
+#justforyou-mobile .button:hover {
 	color: #191e22;
 }
 
-#justforyou .col:hover .button {
+#justforyou .col:hover .button,
+#justforyou-mobile .slick-slide:hover .button {
 	transform: translateY(0);
 	opacity: 1;
 }
