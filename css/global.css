@@ -768,6 +768,10 @@ main {
 	position: relative;
 }
 
+.carousel .slick-slide {
+	position: relative;
+}
+
 .carousel .slick-slide img {
 	width: 100%;
 }
@@ -889,6 +893,23 @@ main {
 #justforyou p {
 	max-width: 320px;
 	color: #888;
+}
+
+#justforyou .hover {
+	visibility: hidden;
+	height: 0;
+}
+
+#justforyou .col:hover img,
+#justforyou-mobile .slide-slide:hover img {
+	visibility: hidden;
+	height: 0;
+}
+
+#justforyou .col:hover .hover,
+#justforyou-mobile .slide-slide:hover .hover {
+	visibility: visible;
+	height: auto;
 }
 
 #justforyou .price,
