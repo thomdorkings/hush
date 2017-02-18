@@ -170,7 +170,7 @@ main {
 
 .landing .button:hover {
 	background: #fff;
-	color: #000;
+	color: #191e22;
 }
 
 .landing .slideshow {
@@ -295,7 +295,7 @@ main {
 	border: 1px solid #F0DFD7;
 	text-transform: uppercase;
 	font-size: 0.8em;
-	color: #000;
+	color: #191e22;
 	text-decoration: none;
 	display: block;
 	margin-bottom: 5px;
@@ -361,7 +361,7 @@ main {
 #email form input:hover,
 #email form input:focus,
 #email form input:active {
-	border-color: #000;
+	border-color: #191e22;
 }
 
 #email form button {
@@ -637,6 +637,64 @@ main {
 	margin-bottom: 40px;
 }
 
+#yourstyle {
+	text-align: center;
+	padding: 60px 0;
+}
+
+#yourstyle .paint {
+	padding: 60px 0;
+	position: relative;
+}
+
+#yourstyle .paint svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate3d(-50%, -50%, 0);
+	z-index: 0;
+	opacity: 0.3;
+}
+
+#yourstyle h4 {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.2em;
+	margin: 1.2em 0 0.5em 0;
+	position: relative;
+}
+
+#yourstyle p {
+	margin: 0 auto;
+}
+
+#yourstyle p.serif {
+	font-size: 2em;
+	color: #191e22;
+	position: relative;
+}
+
+#yourstyle .block {
+	margin-bottom: 5%;
+}
+
+#yourstyle .block img {
+	max-width: 320px;
+	display: block;
+	margin: auto;
+}
+
+#yourstyle .things img {
+	padding: 30px;
+	background: #fff;
+	width: auto;
+	max-width: 100%;
+	box-sizing: border-box;
+	max-height: 325px;
+	margin: auto;
+}
+
 .grid {
 	padding: 40px 0 0 0;
 	text-align: left;
@@ -758,7 +816,7 @@ main {
 
 #justforyou h3 {
 	font-size: 1.3em;
-	margin: 0.6em 0 0 0;
+	margin: 1.2em 0 0 0;
 }
 
 #justforyou .price {
@@ -780,7 +838,7 @@ main {
 }
 
 #justforyou .button:hover {
-	color: #000;
+	color: #191e22;
 }
 
 #justforyou .col:hover .button {

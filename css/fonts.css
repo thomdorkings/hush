@@ -7,7 +7,7 @@ body {
 	color: #191e22;
 }
 	
-h1, h2, h3 {
+h1, h2, h3, .serif {
 	font-family: "ambroise-std",serif;
 	font-style: normal;
 	font-weight: 300;
