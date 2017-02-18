@@ -22,15 +22,14 @@ $(function() {
 		if ($(this).attr('data-style') == 'minimalist') { styles.minimalist++ };
 	})
 	
-	/*
-	$('#email form button').on('click', function() {
+	$('#question7 .button').on('click', function() {
 		if(whichStyle(styles) == 'modernfeminine') { $('#result').css({background: '#ebd8de'}); }
 		if(whichStyle(styles) == 'urban') { $('#result').css({background: '#b0b6a7'}); }
 		if(whichStyle(styles) == 'colourriot') { $('#result').css({background: '#b7d9dc'}); }
 		if(whichStyle(styles) == 'minimalist') { $('#result').css({background: '#e0dddc'}); }
 		setTimeout(function() {window.location.href = whichStyle(styles)+".html"}, 4200);
 	});
-	*/
+	
 	
 	
 	function whichStyle(styles) {
@@ -50,25 +49,6 @@ $(function() {
 	
 	    return chosenStyle;
 	}
-
-    $('.question form').submit(function (e) {
-        e.preventDefault();
-        $.getJSON(
-        this.action + "?callback=?",
-        $(this).serialize(),
-        function (data) {
-            if (data.Status === 400) {
-                alert('error');
-            } else { // 200
-	            window.location.href = '#result';
-                if(whichStyle(styles) == 'modernfeminine') { $('#result').css({background: '#ebd8de'}); }
-				if(whichStyle(styles) == 'urban') { $('#result').css({background: '#b0b6a7'}); }
-				if(whichStyle(styles) == 'colourriot') { $('#result').css({background: '#b7d9dc'}); }
-				if(whichStyle(styles) == 'minimalist') { $('#result').css({background: '#e0dddc'}); }
-				setTimeout(function() {window.location.href = whichStyle(styles)+".html"}, 4200);
-            }
-        });
-    });
     
     $('.subscribe form').submit(function (e) {
         e.preventDefault();
