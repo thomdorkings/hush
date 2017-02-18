@@ -7,6 +7,7 @@ a {
 
 .underline {
 	position: relative;
+	z-index: 1;
 }
 
 .underline:after {
@@ -20,6 +21,10 @@ a {
 	display: block;
 	background: #F0DFD7;
 	z-index: -1;
+}
+
+.darker {
+	background: #F5F4EF;
 }
 
 /* Structure */
@@ -616,10 +621,16 @@ main {
 }
 
 .intro h2 {
-	font-size: 4em;
-	line-height: 1.2em;
+	font-size: 3.5em;
+	line-height: 1em;
 	display: inline-block;
 	margin: 0;
+}
+
+@media only screen and (min-width: 601px) {
+	.intro h2 {
+		font-size: 5em;
+	}
 }
 
 .intro p.small {
@@ -635,10 +646,6 @@ main {
 	margin-bottom: 5%;
 }
 
-.grid .col:nth-child(even) {
-	padding-top: 5%;
-}
-
 .grid img {
 	width: 100%;
 }
@@ -652,7 +659,6 @@ main {
 	max-width: 320px;
 	color: #888;
 }
-
 
 #shareyourstyle h4 {
 	font-size: 1.6em;
@@ -671,17 +677,22 @@ main {
 }
 
 .carousel h5 {
-	font-size: 1em;
+	font-size: 1.2em;
 	display: inline-block;
 	margin: 1.5em 0 0 0;
 }
 
 .carousel p {
-	max-width: 320px;
+	max-width: 400px;
+	margin-top: 0;
+}
+
+.carousel p.book {
+	color: #888;
 }
 
 .carousel .slick-slide {
-	padding: 0 1em 4em 1em;	
+	padding: 0 1em 1em 1em;	
 	outline: none;
 	height: auto;
 }
@@ -734,6 +745,7 @@ main {
 
 #justforyou {
 	text-align: center;
+	padding-top: 60px;
 }
 
 #justforyou h2 {
@@ -741,11 +753,7 @@ main {
 }
 
 #justforyou h2>img {
-	max-width: 500px;
-}
-
-#justforyou .col {
-	padding-top: 0;
+	max-width: 450px;
 }
 
 #justforyou h3 {
@@ -780,20 +788,17 @@ main {
 	opacity: 1;
 }
 
-.subscribe .container {
-	padding: 60px 0;
-	border-top: 2px dotted #ccc;
-	border-bottom: 2px dotted #ccc;
+.subscribe form {
+	margin: 3em 0;
+}
+
+#takeagain .container {
+	padding: 2em 0;
 }
 
 #takeagain h4 {
 	display: inline-block;
-	font-size: 2em;
-}
-
-#takeagain .container {
-	border-bottom: 2px dotted #ccc;
-	padding-bottom: 40px;
+	font-size: 1.6em;
 }
 
 #seetheothers {
