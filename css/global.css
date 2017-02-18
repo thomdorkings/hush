@@ -828,8 +828,11 @@ main {
 	margin-bottom: 5%;
 }
 
-#justforyou h2 {
+#justforyou h2,
+#justforyou-mobile h2 {
 	margin: 0 0 -30px 0;
+	position: relative;
+	z-index: 1;
 }
 
 #justforyou h2>img {
