@@ -102,11 +102,20 @@ $(function() {
 	$('.carousel2').slick({
 		arrows: true,
 		infinite: true,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		nextArrow: '<img src="img/arrow.svg" class="arrow arrow-right">',
 		prevArrow: '<img src="img/arrow.svg" class="arrow arrow-left">',
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		mobileFirst: true,
+		responsive: [
+		  {
+	      breakpoint: 601,
+	      settings: {
+	        slidesToShow: 3
+	      }
+	      }
+		]
 	});
 	
 	$('.share').on('click', function() {

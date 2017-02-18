@@ -347,11 +347,11 @@ main {
 	width: 100%;
 	-webkit-appearance: none;
 	appearance: none;
-	height: 40px;
-	line-height: 40px;
+	height: 30px;
+	line-height: 30px;
 	border: none;
 	background: none;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 2px solid #ddd;
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
 	font-weight: 500;
@@ -381,6 +381,7 @@ main {
 	line-height: 1.3em;
 	margin-top: 10%;
 	cursor: pointer;
+	font-size: 0.8em;
 }
 
 #email form button:focus {
@@ -627,7 +628,7 @@ main {
 
 .intro h2 {
 	font-size: 3.5em;
-	line-height: 1em;
+	line-height: 1.2em;
 	display: inline-block;
 	margin: 0;
 }
@@ -692,13 +693,20 @@ main {
 	margin: auto;
 }
 
+#yourstyle .things {
+	margin-top: 40px;
+}
+
+#yourstyle .things .col {
+	margin-bottom: 30px;
+}
+
 #yourstyle .things img {
 	padding: 30px;
 	background: #fff;
 	width: auto;
 	max-width: 100%;
 	box-sizing: border-box;
-	max-height: 325px;
 	margin: auto;
 }
 
@@ -720,6 +728,39 @@ main {
 	display: inline-block;
 	position: relative;
 	margin: 2em 0 2em 0;
+}
+
+#shareyourstyle a {
+	position: relative;
+	display: block;
+}
+
+#shareyourstyle span {
+	font-size: 0.8em;
+	transform: rotate(-90deg);
+	transform-origin: 100% 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -10px;
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+#shareyourstyle .slick-slide:hover span {
+	opacity: 0.7;
+}
+
+#shareyourstyle span img {
+	width: 12px;
+	display: inline-block;
+	margin-right: 2px;
+	position: relative;
+	top:2px;
+}
+
+#shareyourstyle p.small {
+	margin-top: 0.5em;
 }
 
 .carousel {
@@ -746,7 +787,7 @@ main {
 }
 
 .carousel .slick-slide {
-	padding: 0 1em 1em 1em;	
+	padding: 0 1.5em 1em 1.5em;	
 	outline: none;
 	height: auto;
 }
@@ -882,6 +923,16 @@ main {
 	opacity: 1;
 }
 
+.shopall {
+	display: block;
+	padding: 10px;
+	background: #191e22;
+	color: #fff;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
 .subscribe form {
 	margin: 3em 0;
 }
@@ -903,7 +954,11 @@ main {
 	font-size: 1.6em;
 	display: inline-block;
 	position: relative;
-	margin: 2em 0 2em 0;
+	margin-top: 2em;
+}
+
+#seetheothers p.book {
+	margin: 0 0 2em 0;
 }
 
 .carousel2 {
